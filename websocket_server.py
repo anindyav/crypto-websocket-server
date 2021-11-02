@@ -1,8 +1,9 @@
 import asyncio
 import websockets
 import json
+import os
 
-port = 8081
+port = int(os.environ["PORT"])
 interval = '1m'
 
 base_endpoint = 'wss://stream.binance.com:9443'
